@@ -1,21 +1,16 @@
-<header>
-    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <span class="fs-4">{{ config('app.name') }}</span>
-        </a>
-        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            @if (Route::has('login'))
-                @auth
-                    <a class="me-3 py-2 text-dark text-decoration-none" href="{{ url('/home') }}">Home</a>
-                @else
-                    <a class="me-3 py-2 text-dark text-decoration-none" href="{{ route('login') }}">Login</a>
-
-                    @if (Route::has('register'))
-                        <a class="me-3 py-2 text-dark text-decoration-none"
-                           href="{{ route('register') }}">Register</a>
-                    @endif
-                @endauth
-            @endif
-        </nav>
+<header class="container-fluid">
+    <div class="position-relative">
+        <img class="position-absolute top-0 start-50 translate-middle rounded-circle avatar img-fluid"
+             src="{{asset('assets/images/portrait/dummy-mann.png')}}" alt="portrait">
     </div>
+    <div class="pt-5"></div>
 </header>
+<topcontent>
+    <div class="container-fluid text-center mt-5 mb-5">
+        <h1>Max Mustermann</h1>
+        <p class="mb-5 fs-5">Software Development</p>
+    </div>
+</topcontent>
+
+
+

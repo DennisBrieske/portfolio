@@ -11,13 +11,15 @@
 
 <body>
 <div id="app">
-
-    <div class="col-lg-8 mx-auto p-3 py-md-5">
-        @include('layouts.components.header')
-        @yield('content')
-        @include('layouts.components.footer')
+    <div id="wrap">
+        <div id="main" class="container-fluid ps-0 pe-0">
+            @include('layouts.components.navbar')
+            @include('layouts.components.header')
+            @yield('content')
+            @include('layouts.components.footer')
+        </div>
+        @include('layouts.components.footer-scripts')
     </div>
-    @include('layouts.components.footer-scripts')
 </div>
 </body>
 </html>
