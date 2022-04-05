@@ -7,7 +7,7 @@
 </header>
 <topcontent>
     <div class="container-fluid text-center mt-5 mb-5">
-        <h1>Max Mustermann</h1>
+        <h1>{{ config('app.name', 'Laravel') }}</h1>
         <p class="mb-5 fs-5">Software Development</p>
     </div>
 </topcontent>
