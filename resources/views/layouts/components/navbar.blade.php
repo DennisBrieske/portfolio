@@ -3,11 +3,10 @@
         <li><span style="font-size: 150%"><a href="#"><i class="fab fa-twitter"></i></a></span></li>
         <li class="me-3"><span style="font-size: 150%"><a href="#"><i class="fab fa-linkedin"></i></a></span></li>
         <li class="me-3"><span style="font-size: 150%"><a href="#"><i class="fab fa-github"></i></a></span></li>
-        @if(Route::currentRouteName() == 'welcome')
-            <li class="navigation-nav me-3 float-start"><span style="font-size: 150%"><a href="{{ route('blog') }}">Blog</a></span></li>
-        @else
-            <li class="navigation-nav me-3 float-start"><span style="font-size: 150%"><a href="{{ route('welcome') }}">Home</a></span></li>
-        @endif
+        <li class="navigation-nav me-3 float-start"><span style="font-size: 150%"><a
+                    href="{{ route('welcome') }}">Home</a></span></li>
+        <li class="navigation-nav me-3 float-start"><span style="font-size: 150%"><a href="{{ route('blog') }}">Blog</a></span>
+        </li>
     </ul>
 </nav>
 
