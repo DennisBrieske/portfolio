@@ -41,6 +41,34 @@ body {
     float: right;
 }
 
+.navigation a:link {
+    text-decoration: none;
+    color: #F5F0E6;
+}
+
+.navigation-nav a {
+    position: relative;
+}
+
+.navigation-nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #F5F0E6;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navigation-nav a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
 section {
     display: block;
 }
