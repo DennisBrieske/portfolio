@@ -3,7 +3,7 @@
 @section('content')
     <main>
         @include('layouts.components.techstack')
-        @include('layouts.components.blogPreview')
+        @include('layouts.components.latestBlog')
     </main>
 @endsection
 
