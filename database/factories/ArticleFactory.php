@@ -22,8 +22,8 @@ class ArticleFactory extends Factory
     {
         return [
             'name' => $this->faker->words(4, true),
-            'description' => $this->faker->words(200, true),
-            'text' => $this->faker->words(20, true),
+            'description' => $this->faker->words(20, true),
+            'text' => $this->faker->words(20000, true),
             'image' => null,
             'user_id' => User::inRandomOrder()->first()->id,
             'created_at' => $this->faker->dateTimeBetween('-180 days', 'now'),
