@@ -1,6 +1,13 @@
 /* Todo: Refactoring */
 
-/****************************/
+/*
+    1. General
+    2. Navigation
+    3. Blog
+    4. Footer
+
+*/
+
 /* 1. General */
 
 * {
@@ -10,26 +17,33 @@
 
 html, body {
     height: 100%;
+    background-color: #F5F0E6;
+    color: #45353D;
 }
 
 #wrap {
     min-height: 100%;
 }
 
-body {
-    background-color: #F5F0E6;
-    color: #45353D;
-}
-
-.bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: #45353D !important;
-}
-
 #main {
     overflow:auto;
-    padding-bottom:150px; /* this needs to be bigger than footer height*/
+    padding-bottom:150px;
 }
+
+section {
+    display: block;
+}
+
+.boxShadow {
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 30%);
+}
+
+.avatar {
+    width: 110px !important;
+    height: 110px !important;
+}
+
+/* 2. Navigation */
 
 .navigation {
     background-color: #45353D;
@@ -69,12 +83,7 @@ body {
     transform: scaleX(1);
 }
 
-
-section {
-    display: block;
-}
-
-/* 2.Blog Preview*/
+/* 3.Blog */
 
 .card.blogPreviewCard {
     background-color: #45353D;
@@ -83,10 +92,6 @@ section {
 
 .card-blogpost{
     margin-top: 50px !important;
-}
-
-.boxShadow {
-    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 30%);
 }
 
 .card-blog {
@@ -114,6 +119,10 @@ section {
 
 .card-title {
     color: #9D6B64;
+}
+
+.card-body p {
+    color: #45353D;
 }
 
 .btn-primary {
@@ -154,65 +163,13 @@ section {
     color: #9d6961;
 }
 
-.card-body p {
-    color: #45353D;
-}
-
-
 .card-border {
     box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 30%);
-}
-
-
-.avatar {
-    width: 110px !important;
-    height: 110px !important;
 }
 
 .techPreviewCard {
     background-color: #F5F0E6;
     border-color: #F5F0E6;
-}
-
-.footer {
-    position: relative;
-    margin-top: -150px;
-    height: 150px;
-    clear:both;
-    padding-top:20px;
-}
-
-.icon-list {
-    padding-left: 0;
-    list-style: none;
-}
-.icon-list li {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: .25rem;
-}
-.icon-list li::before {
-    display: block;
-    flex-shrink: 0;
-    width: 1.5em;
-    height: 1.5em;
-    margin-right: .5rem;
-    content: "";
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23212529' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E") no-repeat center center / 100% auto;
-}
-
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
 }
 
 .blogOverview .blog-img {
@@ -239,6 +196,16 @@ section {
     border-radius: 5px;
     background-color: #45353D;
     color: #F5F0E6;
+}
+
+/* 4. Footer */
+
+.footer {
+    position: relative;
+    margin-top: -150px;
+    height: 150px;
+    clear:both;
+    padding-top:20px;
 }
 
 
