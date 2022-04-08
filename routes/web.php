@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index']);
+Route::resource('/', App\Http\Controllers\WelcomeController::class, ['only' => ['index']]);
 Route::resource('/blog', App\Http\Controllers\BlogController::class, ['only' => ['index', 'show']]);
 
 Auth::routes();
