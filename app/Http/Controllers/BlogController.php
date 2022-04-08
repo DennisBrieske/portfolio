@@ -48,9 +48,9 @@ class BlogController extends Controller
      */
     public function show($article)
     {
-        $art = Article::where('id', $article)->first();
+        $article = Article::where('id', $article)->first();
 
-        return view('blog', compact('art'));
+        return view('blog', compact('article'));
     }
 
     /**

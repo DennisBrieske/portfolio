@@ -98,12 +98,18 @@ section {
 }
 
 .card-top {
-    margin-top: 50px !important;
+    margin-top: 60px !important;
 }
 
 .card-img-top {
     margin-top: -60px !important;
     border-radius: 5px !important;
+}
+
+.img-blog {
+    max-height: 150px !important;
+    margin-top: 0px !important;
+    object-fit: cover;
 }
 
 .card-title {
