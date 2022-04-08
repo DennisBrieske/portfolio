@@ -26,7 +26,7 @@ class ArticleFactory extends Factory
             'text' => $this->faker->words(20, true),
             'image' => null,
             'user_id' => User::inRandomOrder()->first()->id,
-            'created_at' => now(),
+            'created_at' => $this->faker->dateTimeBetween('-180 days', 'now'),
             'updated_at' => now(),
             'published' => $this->faker->boolean(),
         ];
