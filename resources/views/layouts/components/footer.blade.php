@@ -1,6 +1,6 @@
 <footer class="footer p-5 my-5 d-flex flex-column align-items-center flex-md-row
     text-muted border-top">
-    Created by {{ config('app.name', 'Laravel') }} &middot; &copy; 2022
+    Created & Designed by {{ config('app.name', 'Laravel') }} &middot; &copy; 2022
     <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
         @if (Route::has('login'))
             @auth

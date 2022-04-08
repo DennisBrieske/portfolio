@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
-Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
+Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index']);
+Route::resource('/blog', App\Http\Controllers\BlogController::class);
 
 Auth::routes();
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller
+class WelcomeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $articles = Article::orderBy('created_at', 'desc')->get();
+        $articles = Article::orderBy('created_at', 'desc')->take(3)->get();
 
-        return view('blogOverview', compact('articles'));
+        return view('welcome', compact('articles'));
     }
 
     /**
@@ -43,14 +43,12 @@ class BlogController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param Article $article
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
      */
-    public function show($article)
+    public function show($id)
     {
-        $art = Article::where('id', $article)->first();
-
-        return view('blog', compact('art'));
+        //
     }
 
     /**
