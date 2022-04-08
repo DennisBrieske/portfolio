@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index']);
-Route::resource('/blog', App\Http\Controllers\BlogController::class);
+Route::resource('/blog', App\Http\Controllers\BlogController::class, ['only' => ['index', 'show']]);
 
 Auth::routes();
 
