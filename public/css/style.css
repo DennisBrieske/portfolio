@@ -88,12 +88,22 @@ section {
 .boxShadow {
     box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 30%);
 }
+
 .card-blog {
     background-color: #F5F0E6 !important;
     color: #45353D;
-    border-radius: 0px 0px 5px 5px !important;
+    border-radius: 5px 5px 5px 5px !important;
     border: none !important;
     vertical-align: bottom;
+}
+
+.card-top {
+    margin-top: 50px !important;
+}
+
+.card-img-top {
+    margin-top: -60px !important;
+    border-radius: 5px !important;
 }
 
 .card-title {
@@ -142,27 +152,11 @@ section {
     color: #45353D;
 }
 
-.img-fluid {
-    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 30%);
-}
-
-.c {
-    border-radius: 5px 5px 0px 0px;
-    padding: 20px !important;
-    background-color: #F5F0E6 !important;
-}
 
 .card-border {
     box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 30%);
 }
 
-.c-img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: -70px !important;
-    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 30%);
-}
 
 .avatar {
     width: 110px !important;

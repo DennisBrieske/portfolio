@@ -6,10 +6,10 @@
                     <h4 class="mt-4 ms-4 mb-4">Check my latest blogposts</h4>
                 </div>
             </div>
-            <div class="row justify-content-lg-center">
-                @include('layouts.components.blogCard')
-                @include('layouts.components.blogCard')
-                @include('layouts.components.blogCard')
+            <div class="row justify-content-lg-center card-top">
+                @foreach( $articles as $article)
+                    @include('layouts.components.blogCard')
+                @endforeach
             </div>
         </div>
     </div>
