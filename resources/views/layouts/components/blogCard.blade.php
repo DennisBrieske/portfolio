@@ -1,4 +1,4 @@
-<div class="col-lg-3 mb-5 ms-2 me-3 boxShadow">
+<div class="col-lg-3 mb-5 me-5 ms-md-3 me-md-3 boxShadow">
     <div class="card h-100 card-blog">
         <div class="card-body d-flex flex-column m-2 mt-5">
             @if($article->image != null)
