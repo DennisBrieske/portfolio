@@ -64,6 +64,10 @@ section {
     position: relative;
 }
 
+.navigation-nav-color a:visited {
+    color: #F5F0E6;
+}
+
 .navigation-nav a::before {
     content: '';
     position: absolute;
